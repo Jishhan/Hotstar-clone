@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotstar Clone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar d-flex flex-column p-3 text-white align-items-center justify-content-center position-fixed">
+        <div class="position-absolute top-0 d-flex flex-column align-items-center">
+            <i><img src="./assets/images/logo.png" alt="logo" class="logo-wrap"></i>
+            <button class="btn btn-warning button5">Upgrade</button>
+        </div>
+        <div class="d-flex flex-column  p-6 sidebar-wrap">
+            <a href="#" class="fas fa-home my-3 text-decoration-none text-white"><span
+                    class="menu-text hover-display-block">Home</span> </a>
+            <a href="#" class="fas fa-search my-3 text-decoration-none text-white"><span
+                    class="menu-text hover-display-block">Search</span></a>
+            <a href="#" class="fas fa-tv my-3 text-decoration-none text-white"><span
+                    class="menu-text hover-display-block">Tv</span></a>
+            <a href="#" class="fas fa-film my-3 text-decoration-none text-white"><span
+                    class="menu-text hover-display-block">Movie</span></a>
+            <a href="#" class="fas fa-user my-3 text-decoration-none text-white"><span
+                    class="menu-text hover-display-block">Profile</span></a>
+        </div>
+    </div>
+    <div class="main-container my-10 z-index-10 ">
+        <!-- Hero Section -->
+        <div class="hero flex-grow-1 d-flex flex-column justify-content-end position-sticky">
+            <div class="d-flex flex-row p-5 hero-overlay-content align-items-center">
+                <div class="hero-overlay text-white ">
+                    <img src="./assets/images/pirates-logo.webp" class="mb-3" style="width: 300px;"
+                        alt="Pirates Logo" />
+                    <p class="mb-2">2017 · <span class="badge bg-secondary">U/A 13+</span> · 2h 9m · 4 Languages</p>
+                    <p class="desc mb-3">Captain Jack Sparrow senses the winds of ill-fortune when his nemesis Captain
+                        Salazar escapes from the Devil's Triangle, to kill every pirate at sea.</p>
+                    <p class="text-white mb-3">Action | Adventure | Fantasy | Slasher</p>
+                    <button class="btn btn-primary">▶ Watch Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- Thumbnail Slider -->
+        <section class="movie-slider-section text-white px-5 py-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Latest Releases</h4>
+                <a href="#" class="text-white-50 text-decoration-none">View All</a>
+            </div>
+
+            <div class="">
+                <div class="movie-slider d-flex overflow-auto gap-3">
+                    <a href="#"><img src="./assets/images/latest-1.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-2.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-3.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-4.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-5.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-6.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-7.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-8.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-5.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-3.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-8.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-1.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-5.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-2.avif" class="movie-card" /></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-slider-section text-white px-5 py-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Best Of Originals</h4>
+                <a href="#" class="text-white-50 text-decoration-none">View All</a>
+            </div>
+
+            <div class="">
+                <div class="movie-slider d-flex overflow-auto gap-3">
+                    <a href="#"><img src="./assets/images/populer-1.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-2.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-3.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-4.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-5.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-6.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-7.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-8.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-4.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-5.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-6.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-7.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-8.webp" class="movie-card" /></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-slider-section text-white px-5 py-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Popular language</h4>
+                <a href="#" class="text-white-50 text-decoration-none">View All</a>
+            </div>
+
+            <div class="width-100">
+                <div class="movie-slider d-flex overflow-auto gap-3">
+                    <a href="#"><img src="./assets/images/hindi.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/english.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/tamil.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/telugu.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/malyalam.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/odisa.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/marathi.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/malyalam.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/japanese.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/korean.webp" class="movie-card" /></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="">
+            <div class="movie-slider-2 d-flex justify-content-center align-items-center gap-3">
+                <a href="#"><img src="./assets/images/pc.avif" class="movie-card" /></a>
+                <a href="#"><img src="./assets/images/mountain.avif" class="movie-card" /></a>
+                <a href="#"><img src="./assets/images/hbo.avif" class="movie-card" /></a>
+                <a href="#"><img src="./assets/images/hotstar.avif" class="movie-card" /></a>
+                <a href="#"><img src="./assets/images/1535226-a-3080287f77cd.webp" class="movie-card" /></a>
+                <a href="#"><img src="./assets/images/d.webp" class="movie-card" /></a>
+            </div>
+        </div>
+
+        <section class="movie-slider-section text-white px-5 py-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Popular Genres</h4>
+                <a href="#" class="text-white-50 text-decoration-none">View All</a>
+            </div>
+
+            <div class="width-100">
+                <div class="movie-slider d-flex overflow-auto gap-3">
+                    <a href="#"><img src="./assets/images/action.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/talk-show.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/comady.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/crime.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/food.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/drama.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/reality.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/romance.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/family.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/food.webp" class="movie-card" /></a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="movie-slider-section text-white px-5 py-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Peackoc's Finest</h4>
+                <a href="#" class="text-white-50 text-decoration-none">View All</a>
+            </div>
+
+            <div class="">
+                <div class="movie-slider d-flex overflow-auto gap-3">
+                    <a href="#"><img src="./assets/images/finest-2.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-2.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-3.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-4.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-5.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-6.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-7.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-8.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-3.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-4.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-5.webp" class="movie-card" /></a>
+                
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-slider-section text-white px-5 py-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Action Movies</h4>
+                <a href="#" class="text-white-50 text-decoration-none">View All</a>
+            </div>
+
+            <div class="">
+                <div class="movie-slider d-flex overflow-auto gap-3">
+                    <a href="#"><img src="./assets/images/action-1.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-2.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-3.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-4.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-5.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-6.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-7.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-8.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-1.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-3.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-7.webp" class="movie-card" /></a>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="container-fluid p-4">
+            <h4 class="fw-bold">Every Game Matters</h4>
+            <p class="text-secondary">May 4 - May 18</p>
+
+            <!-- Carousel -->
+            <div id="highlightCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-6 col-md-2">
+                                <div class="highlight-card">
+                                    <img class="ipl-card-img" src="./assets/images/srh.avif" alt="Highlight 1">
+                                    <div class="highlight-title">SRH Out, DC Hang On in Top 4 Race</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <div class="highlight-card">
+                                    <img class="ipl-card-img" src="./assets/images/srh.avif" alt="Highlight 2">
+                                    <div class="highlight-title">SRH vs DC: Highlights</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <div class="highlight-card">
+                                    <img class="ipl-card-img" src="./assets/images/panjab.avif"
+                                        alt="Highlight 3">
+                                    <div class="highlight-title">PBKS vs LSG: Highlights</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <div class="highlight-card">
+                                    <img class="ipl-card-img" src="./assets/images/kkkr.avif"
+                                        alt="Highlight 4">
+                                    <div class="highlight-title">KKR vs RR: Highlights</div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <div class="highlight-card">
+                                    <img class="ipl-card-img" src="./assets/images/csk.avif"
+                                        alt="Highlight 5">
+                                    <div class="highlight-title">RCB vs CSK: Highlights</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container my-5 overflow-auto d-flex gap-3">
+            <div class="card bg-dark text-white border-0 rounded-4 p-3">
+                <div class="row g-0">
+                    <div class="col-12 text-end pe-3">
+                        <span class="text-white-50">हिंदी <i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="./assets/images/1734496960843-i.webp" alt="Illegal Poster" class="img-fluid rounded-3 mb-3"
+                            style="max-height: 300px;">
+                    </div>
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold display-6">ILLEGAL</h2>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center mt-3">
+                        <button class="btn btn-light fw-bold me-2 px-4 py-2"><i class="fas fa-play me-2"></i>Watch
+                            Now</button>
+                        <button class="btn btn-outline-light px-3 py-2"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="col-12 text-center mt-3 text-secondary fw-semibold small">
+                        2024 • U/A 16+ • 3 Seasons • 6 Languages
+                    </div>
+                    <div class="col-12 text-center mt-2 text-white-50 px-4">
+                        <p class="mb-0">
+                            Justice for sale? In a high-end law firm, where ethics take a backseat to billable hours,
+                            one lawyer fights back.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark text-white border-0 rounded-4 p-3">
+                <div class="row g-0">
+                    <div class="col-12 text-end pe-3">
+                        <span class="text-white-50">हिंदी <i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="./assets/images/1734496960843-i.webp" alt="Illegal Poster" class="img-fluid rounded-3 mb-3"
+                            style="max-height: 300px;">
+                    </div>
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold display-6">ILLEGAL</h2>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center mt-3">
+                        <button class="btn btn-light fw-bold me-2 px-4 py-2"><i class="fas fa-play me-2"></i>Watch
+                            Now</button>
+                        <button class="btn btn-outline-light px-3 py-2"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="col-12 text-center mt-3 text-secondary fw-semibold small">
+                        2024 • U/A 16+ • 3 Seasons • 6 Languages
+                    </div>
+                    <div class="col-12 text-center mt-2 text-white-50 px-4">
+                        <p class="mb-0">
+                            Justice for sale? In a high-end law firm, where ethics take a backseat to billable hours,
+                            one lawyer fights back.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark text-white border-0 rounded-4 p-3">
+                <div class="row g-0">
+                    <div class="col-12 text-end pe-3">
+                        <span class="text-white-50">हिंदी <i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="./assets/images/1734496960843-i.webp" alt="Illegal Poster" class="img-fluid rounded-3 mb-3"
+                            style="max-height: 300px;">
+                    </div>
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold display-6">ILLEGAL</h2>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center mt-3">
+                        <button class="btn btn-light fw-bold me-2 px-4 py-2"><i class="fas fa-play me-2"></i>Watch
+                            Now</button>
+                        <button class="btn btn-outline-light px-3 py-2"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="col-12 text-center mt-3 text-secondary fw-semibold small">
+                        2024 • U/A 16+ • 3 Seasons • 6 Languages
+                    </div>
+                    <div class="col-12 text-center mt-2 text-white-50 px-4">
+                        <p class="mb-0">
+                            Justice for sale? In a high-end law firm, where ethics take a backseat to billable hours,
+                            one lawyer fights back.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-dark text-white border-0 rounded-4 p-3">
+                <div class="row g-0">
+                    <div class="col-12 text-end pe-3">
+                        <span class="text-white-50">हिंदी <i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="./assets/images/1734496960843-i.webp" alt="Illegal Poster" class="img-fluid rounded-3 mb-3"
+                            style="max-height: 300px;">
+                    </div>
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold display-6">ILLEGAL</h2>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center align-items-center mt-3">
+                        <button class="btn btn-light fw-bold me-2 px-4 py-2"><i class="fas fa-play me-2"></i>Watch
+                            Now</button>
+                        <button class="btn btn-outline-light px-3 py-2"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="col-12 text-center mt-3 text-secondary fw-semibold small">
+                        2024 • U/A 16+ • 3 Seasons • 6 Languages
+                    </div>
+                    <div class="col-12 text-center mt-2 text-white-50 px-4">
+                        <p class="mb-0">
+                            Justice for sale? In a high-end law firm, where ethics take a backseat to billable hours,
+                            one lawyer fights back.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="movie-slider-section text-white px-5 py-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Best Of Originals</h4>
+                <a href="#" class="text-white-50 text-decoration-none">View All</a>
+            </div>
+
+            <div class="">
+                <div class="movie-slider d-flex overflow-auto gap-3">
+                    <a href="#"><img src="./assets/images/populer-1.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-2.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-3.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-4.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-5.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-6.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-7.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-8.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-4.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-5.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-6.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-7.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-8.webp" class="movie-card" /></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-slider-section text-white px-5 py-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Peackoc's Finest</h4>
+                <a href="#" class="text-white-50 text-decoration-none">View All</a>
+            </div>
+
+            <div class="">
+                <div class="movie-slider d-flex overflow-auto gap-3">
+                    <a href="#"><img src="./assets/images/finest-2.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-2.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-3.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-4.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-5.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-6.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-7.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-8.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-3.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-4.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/finest-5.webp" class="movie-card" /></a>
+                
+                </div>
+            </div>
+        </section>
+
+        <section class="movie-slider-section text-white px-5 py-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Latest Releases</h4>
+                <a href="#" class="text-white-50 text-decoration-none">View All</a>
+            </div>
+
+            <div class="">
+                <div class="movie-slider d-flex overflow-auto gap-3">
+                    <a href="#"><img src="./assets/images/latest-1.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-2.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-3.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-4.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-5.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-6.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-7.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-8.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-5.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-3.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-8.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-1.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-5.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/latest-2.avif" class="movie-card" /></a>
+                </div>
+            </div>
+        </section>
+   
+        <section class="movie-slider-section text-white px-5 py-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Action Movies</h4>
+                <a href="#" class="text-white-50 text-decoration-none">View All</a>
+            </div>
+
+            <div class="">
+                <div class="movie-slider d-flex overflow-auto gap-3">
+                    <a href="#"><img src="./assets/images/action-1.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-2.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-3.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-4.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-5.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-6.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-7.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-8.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-1.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-3.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/action-7.webp" class="movie-card" /></a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="movie-slider-section text-white px-5 py-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Best Of Originals</h4>
+                <a href="#" class="text-white-50 text-decoration-none">View All</a>
+            </div>
+
+            <div class="">
+                <div class="movie-slider d-flex overflow-auto gap-3">
+                    <a href="#"><img src="./assets/images/populer-1.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-2.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-3.avif" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-4.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-5.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-6.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-7.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-8.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-4.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-5.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-6.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-7.webp" class="movie-card" /></a>
+                    <a href="#"><img src="./assets/images/populer-8.webp" class="movie-card" /></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <footer class="footer-section text-white py-5 px-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Company Info -->
+                    <div class="col-md-3 col-6 mb-4">
+                        <h6>Company</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none">About Us</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Language Option -->
+                    <div class="col-md-3 col-6 mb-4">
+                        <h6>View Website in</h6>
+                        <p class="text-white"><i class="fas fa-check text-success"></i> English</p>
+                    </div>
+
+                    <!-- Help Links -->
+                    <div class="col-md-3 col-6 mb-4">
+                        <h6>Need Help?</h6>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white-50 text-decoration-none">Visit Help Center</a></li>
+                            <li><a href="#" class="text-white-50 text-decoration-none">Share Feedback</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Social & Store Links -->
+                    <div class="col-md-3 col-6 mb-4 text-md-end text-start">
+                        <h6>Connect with Us</h6>
+                        <div class="mb-2">
+                            <a href="#" class="text-white-50 me-3"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="text-white-50"><i class="fas fa-times"></i></a>
+                        </div>
+                        <div>
+                            <img src="images/google-play.png" alt="Google Play" class="store-badge me-2" />
+                            <img src="images/app-store.png" alt="App Store" class="store-badge" />
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="bg-secondary" />
+                <div class="text-white-50 small d-md-flex justify-content-between">
+                    <div>
+                        © 2025 STAR. All Rights Reserved.<br />
+                        <a href="#" class="text-white-50 me-2 text-decoration-none">Terms Of Use</a>
+                        <a href="#" class="text-white-50 me-2 text-decoration-none">Privacy Policy</a>
+                        <a href="#" class="text-white-50 text-decoration-none">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
