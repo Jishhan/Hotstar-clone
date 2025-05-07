@@ -19,12 +19,21 @@ body, html {
     font-size: 16px;
     cursor: pointer;
   }
+  .btn-sidebar{
+    background-color: #000000;
+    color: #fff;
+    border: solid 1px #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 2px 10px;
+  }
   .logo-wrap{
     width: 100%;
     height: 50px;
   }
   .btn{
-    padding: 2px 4px;
+    padding: 20px 40px;
     border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -85,10 +94,12 @@ body, html {
   .movie-slider-2 {
     scroll-behavior: smooth;
     width: 100%;
-    padding: 50px 400px;
+    padding: 50px 0;
+    padding-left: 29px;
   }
   .highlight-card{
     background-repeat: no-repeat;
+    margin-bottom: 35px;
   }
   .ipl-card-img{
     width: 100%;
@@ -98,7 +109,9 @@ body, html {
   .carousel-item.active{
     color: #fff;
   }
-  
+  .movie-slider-section{
+    padding-left: 16px;
+  }
   .movie-card {
     width: 180px;
     height: 270px;
@@ -106,6 +119,10 @@ body, html {
     border-radius: 8px;
     transition: transform 0.2s;
     cursor: pointer;
+    height: auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    object-fit: fill;
   }
   
   .movie-card:hover {
@@ -126,11 +143,9 @@ body, html {
 .container-fluid p{
     color: #fff;
 }
-.movie-card{
-    height: auto;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    object-fit: fill;
+.card-movie{
+  max-width: 300px;
+  min-width: 300px;
 }
 
 
@@ -140,4 +155,81 @@ body, html {
     display: block !important;
   }
 
-  
+/* jqyarry */
+
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 60px;
+      left: 18px;
+    }
+    .sidebar i {
+      font-size: 14px;
+    }
+    .sidebar-wrap:hover a .menu-text{
+        transform: translateX(0px);
+        opacity: 1;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+    }
+
+  .hero {
+    height: 500px;
+  }
+  .hero-bg {
+    height: 500px;
+  }
+  .hero-overlay {
+    max-width: 100%;
+    top: 10%;
+  }
+  .hero-overlay .desc {
+    max-width: 100%;
+  }
+  .movie-slider-2 {
+    padding: 50px 0;
+  }
+  .movie-card {
+    height: auto;
+  }
+  .ipl-card-img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .container-fluid {
+    height: auto;
+    background-image: url(./images/rcb.avif);
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 100%;
+  }
+  .container-fluid p{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+  .movie-card{
+    height: auto;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    margin: 0 10px;
+  }
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  .movie-card img{
+    width: 100%;
+    height: auto;
+  }
+  .movie-card:hover img{
+    transform: scale(1.05);
+  }
+  .movie-card:hover .card-title{
+    transform: translateY(-10px);
+  }
+}
